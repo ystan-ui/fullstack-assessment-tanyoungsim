@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "3daff0d4-865b-41e6-9630-07706fb0e4fc",
+		"name": "Card_Ops_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "584436"
+	},
+	"item": [
+		{
+			"name": "CreateCard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cardNumber\": \"4111111111111111\",\"cardHolderName\": \"John Doe1\",\"expiryDate\": \"0526\",\"cvv\": \"123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8088/cards"
+			},
+			"response": []
+		},
+		{
+			"name": "GetCards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/cards?page=0&size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"cards"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetExternalAPIData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/cards/external?apiKey=wrongkey123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"cards",
+						"external"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "wrongkey123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

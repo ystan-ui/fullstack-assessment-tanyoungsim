@@ -1,0 +1,22 @@
+# Ignore Eclipse and IDE files
+.metadata/
+.classpath
+.project
+.settings/
+
+# Ignore build outputs
+target/
+bin/
+build/
+dist/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore node_modules for frontend
+node_modules/
+.env

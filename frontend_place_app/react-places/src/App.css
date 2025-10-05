@@ -1,0 +1,2 @@
+/* minimal fallback styles kept; Tailwind will provide rest */
+html, body, #root { height: 100%; margin: 0; }
