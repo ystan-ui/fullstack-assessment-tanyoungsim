@@ -3,11 +3,18 @@ Contains backend (card_ops_api &amp; place_app) and frontend (react_places) asse
 This repository contains two backend assessments and one frontend project using a shared MSSQL database (`TESTDB`).
 
 ## 📂 Project Structure
-card_ops_api/ → Backend API for card operations
-postman_collection/ → Postman collection for testing card_ops_api endpoints
-place_app/ → Backend API for place app
-frontend_place_app/ → React frontend for place_app (for this frontend react place is using no-key Nominatim + Leaflet as currently have not setup Google API Key)
-database/TESTDB.bak → MSSQL database backup
+
+/fullstack-assessment-tanyoungsim
+│
+├── card_ops_api/                     # Java backend #1 for card operations
+├── postman_collection/               # Postman collection for testing card_ops_api endpoints
+│
+├── place_app/                        # Java backend #2 for place_app
+├── frontend_place_app/react_places/  # React frontend for place_app (for this frontend react place is using no-key Nominatim + Leaflet as currently have not setup Google API Key)
+│
+└── database/
+    └── TESTDB.bak                    # MSSQL DB backup
+
 
 ## 🧩 Requirements
 - Java 17+
